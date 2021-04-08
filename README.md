@@ -1,6 +1,10 @@
 # logic-flow-demo
 >基于[LogicFlow](http://logic-flow.org)的流程设计器
 
+# [预览地址](https://viewhang.github.io/logic-flow-demo/)
+
+
+
 ## Project setup
 ```
 npm install
