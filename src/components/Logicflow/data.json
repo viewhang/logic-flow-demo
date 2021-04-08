@@ -1,0 +1,251 @@
+{
+  "nodes": [
+    {
+      "id": "742356ea-762b-4899-b96a-bd567e3c4361",
+      "type": "start",
+      "x": 220,
+      "y": 170,
+      "properties": {}
+    },
+    {
+      "id": "dacda6b6-48d3-4dff-911d-287704eb23d8",
+      "type": "task",
+      "x": 350,
+      "y": 170,
+      "properties": {},
+      "text": {
+        "x": 350,
+        "y": 178,
+        "value": "基础节点"
+      }
+    },
+    {
+      "id": "49106603-2b88-4b2c-b1e8-723c1f2210bd",
+      "type": "decision",
+      "x": 530,
+      "y": 170,
+      "properties": {},
+      "text": {
+        "x": 530,
+        "y": 182,
+        "value": "请假大于5天"
+      }
+    },
+    {
+      "id": "647fa2bc-98ee-40cf-99c5-4756c0bc130d",
+      "type": "replication",
+      "x": 690,
+      "y": 170,
+      "properties": {},
+      "text": {
+        "x": 690,
+        "y": 178,
+        "value": "部门领导会签"
+      }
+    },
+    {
+      "id": "60326ad9-cae2-4a85-ae98-d340fb7bd67f",
+      "type": "end",
+      "x": 870,
+      "y": 170,
+      "properties": {}
+    },
+    {
+      "id": "a110a936-cebf-4c79-a516-1ad2600d9330",
+      "type": "task",
+      "x": 530,
+      "y": 310,
+      "properties": {},
+      "text": {
+        "x": 530,
+        "y": 318,
+        "value": "领导审批"
+      }
+    },
+    {
+      "id": "ca9da013-891e-4bc3-842d-484e4cfca4c4",
+      "type": "end",
+      "x": 670,
+      "y": 310,
+      "properties": {}
+    }
+  ],
+  "edges": [
+    {
+      "id": "00f55245-513e-43a2-9cb0-adb61b01adc8",
+      "type": "polyline",
+      "sourceNodeId": "742356ea-762b-4899-b96a-bd567e3c4361",
+      "targetNodeId": "dacda6b6-48d3-4dff-911d-287704eb23d8",
+      "startPoint": {
+        "x": 240,
+        "y": 170
+      },
+      "endPoint": {
+        "x": 300,
+        "y": 170
+      },
+      "properties": {},
+      "pointsList": [
+        {
+          "x": 240,
+          "y": 170
+        },
+        {
+          "x": 300,
+          "y": 170
+        }
+      ]
+    },
+    {
+      "id": "122ff086-d1a1-416f-b57d-285b78ef818a",
+      "type": "polyline",
+      "sourceNodeId": "dacda6b6-48d3-4dff-911d-287704eb23d8",
+      "targetNodeId": "49106603-2b88-4b2c-b1e8-723c1f2210bd",
+      "startPoint": {
+        "x": 400,
+        "y": 170
+      },
+      "endPoint": {
+        "x": 480,
+        "y": 170
+      },
+      "properties": {},
+      "pointsList": [
+        {
+          "x": 400,
+          "y": 170
+        },
+        {
+          "x": 480,
+          "y": 170
+        }
+      ]
+    },
+    {
+      "id": "b49ea30c-d09e-4747-8566-9b7ea1d3fbfe",
+      "type": "polyline",
+      "sourceNodeId": "49106603-2b88-4b2c-b1e8-723c1f2210bd",
+      "targetNodeId": "a110a936-cebf-4c79-a516-1ad2600d9330",
+      "startPoint": {
+        "x": 530,
+        "y": 220
+      },
+      "endPoint": {
+        "x": 530,
+        "y": 270
+      },
+      "properties": {},
+      "text": {
+        "x": 530,
+        "y": 244,
+        "value": "否"
+      },
+      "pointsList": [
+        {
+          "x": 530,
+          "y": 220
+        },
+        {
+          "x": 530,
+          "y": 250
+        },
+        {
+          "x": 530,
+          "y": 250
+        },
+        {
+          "x": 530,
+          "y": 240
+        },
+        {
+          "x": 530,
+          "y": 240
+        },
+        {
+          "x": 530,
+          "y": 270
+        }
+      ]
+    },
+    {
+      "id": "df1cdcef-1044-42b1-92e0-19d08d776bef",
+      "type": "polyline",
+      "sourceNodeId": "647fa2bc-98ee-40cf-99c5-4756c0bc130d",
+      "targetNodeId": "60326ad9-cae2-4a85-ae98-d340fb7bd67f",
+      "startPoint": {
+        "x": 740,
+        "y": 170
+      },
+      "endPoint": {
+        "x": 845,
+        "y": 170
+      },
+      "properties": {},
+      "pointsList": [
+        {
+          "x": 740,
+          "y": 170
+        },
+        {
+          "x": 845,
+          "y": 170
+        }
+      ]
+    },
+    {
+      "id": "d71197e8-b1d6-446f-a262-2ef71c89c3ea",
+      "type": "polyline",
+      "sourceNodeId": "49106603-2b88-4b2c-b1e8-723c1f2210bd",
+      "targetNodeId": "647fa2bc-98ee-40cf-99c5-4756c0bc130d",
+      "startPoint": {
+        "x": 580,
+        "y": 170
+      },
+      "endPoint": {
+        "x": 640,
+        "y": 170
+      },
+      "properties": {},
+      "text": {
+        "x": 607,
+        "y": 170,
+        "value": "是"
+      },
+      "pointsList": [
+        {
+          "x": 580,
+          "y": 170
+        },
+        {
+          "x": 640,
+          "y": 170
+        }
+      ]
+    },
+    {
+      "id": "ccdeb796-24db-4943-9ed9-9b85ef706f3f",
+      "type": "polyline",
+      "sourceNodeId": "a110a936-cebf-4c79-a516-1ad2600d9330",
+      "targetNodeId": "ca9da013-891e-4bc3-842d-484e4cfca4c4",
+      "startPoint": {
+        "x": 580,
+        "y": 310
+      },
+      "endPoint": {
+        "x": 645,
+        "y": 310
+      },
+      "properties": {},
+      "pointsList": [
+        {
+          "x": 580,
+          "y": 310
+        },
+        {
+          "x": 645,
+          "y": 310
+        }
+      ]
+    }
+  ]
+}
