@@ -18,16 +18,16 @@
     </div>
     <div
       class="control-item"
-      @click="onUndo"
       :style="undoDisable ? 'cursor: not-allowed;color: #7d7d7d;background:hsla(0, 0%, 100%, 0.7)' : ''"
+      @click="onUndo"
     >
       <a-icon type="left" />
       <span class="control-text">上一步</span>
     </div>
     <div
       class="control-item"
-      @click="onRedo"
       :style="redoDisable ? 'cursor: not-allowed;color: #7d7d7d;background:hsla(0, 0%, 100%, 0.7)' : ''"
+      @click="onRedo"
     >
       <a-icon type="right" />
       <span class="control-text">下一步</span>
@@ -46,18 +46,18 @@
 export default {
   name: 'Control',
   props: {
-    lf: Object || String,
+    lf: Object || String
   },
   data() {
     return {
       undoDisable: true,
       redoDisable: true,
       graphData: null,
-      dataVisible: false,
+      dataVisible: false
     }
   },
   mounted() {
-    this.lf.on('history:change', ({ data: { undoAble, redoAble } }) => {
+    this.lf.on('history:change', ({ data: { undoAble, redoAble }}) => {
       this.undoDisable = !undoAble
       this.redoDisable = !redoAble
     })
@@ -67,8 +67,8 @@ export default {
       this.lf.updateEditConfig({
         stopMoveGraph: true,
         extraConf: {
-          openSelectionMode: true,
-        },
+          openSelectionMode: true
+        }
       })
     },
     onZoomIn() {
@@ -94,8 +94,8 @@ export default {
     },
     onCatData() {
       this.$emit('catData')
-    },
-  },
+    }
+  }
 }
 </script>
 <style scoped>

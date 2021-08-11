@@ -1,7 +1,7 @@
-export default function registerPolyline (lf) {
+export default function registerPolyline(lf) {
   lf.register('polyline', ({ PolylineEdge, PolylineEdgeModel }) => {
     class ConnnectionModel extends PolylineEdgeModel {
-      constructor (data, graphModel) {
+      constructor(data, graphModel) {
         super(data, graphModel)
       }
     }

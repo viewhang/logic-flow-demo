@@ -1,7 +1,7 @@
 <template>
   <div class="node-panel">
-    <div class="node-item" v-for="item in nodeList" :key="item.text" @mousedown="onDragNode(item)">
-      <div class="node-item-icon" :class="item.class"></div>
+    <div v-for="item in nodeList" :key="item.text" class="node-item" @mousedown="onDragNode(item)">
+      <div class="node-item-icon" :class="item.class" />
       <span class="node-label">{{ item.text }}</span>
     </div>
   </div>
@@ -10,7 +10,7 @@
 export default {
   name: 'NodePanel',
   props: {
-    lf: Object,
+    lf: Object
   },
   data() {
     return {
@@ -18,44 +18,44 @@ export default {
         {
           text: '开始',
           type: 'start',
-          class: 'node-start',
+          class: 'node-start'
         },
         {
           text: '处理',
           type: 'task',
-          class: 'node-task',
+          class: 'node-task'
         },
         {
           type: 'decision',
           text: '判断',
-          class: 'node-decision',
+          class: 'node-decision'
         },
         {
           type: 'replication',
           text: '重复',
-          class: 'node-replication',
+          class: 'node-replication'
         },
         {
           type: 'concurrency',
           text: '并行',
-          class: 'node-concurrency',
+          class: 'node-concurrency'
         },
         {
           type: 'end',
           text: '结束',
-          class: 'node-end',
-        },
-      ],
+          class: 'node-end'
+        }
+      ]
     }
   },
   methods: {
     onDragNode(item) {
       this.lf.dnd.startDrag({
         type: item.type,
-        text: item.label,
+        text: item.label
       })
-    },
-  },
+    }
+  }
 }
 </script>
 <style>

@@ -2,7 +2,7 @@ const NODE_COLOR = '#9932CC'
 export default function registerDownload(lf) {
   lf.register('download', ({ PolygonNode, PolygonNodeModel, h }) => {
     class Node extends PolygonNode {
-      getIconShape () {
+      getIconShape() {
         return h(
           'svg',
           {
@@ -28,7 +28,7 @@ export default function registerDownload(lf) {
           )
         )
       }
-      getShape () {
+      getShape() {
         const attributes = this.getAttributes()
         const {
           width,
@@ -67,7 +67,7 @@ export default function registerDownload(lf) {
       }
     }
     class Model extends PolygonNodeModel {
-      constructor (data, graphModel) {
+      constructor(data, graphModel) {
         data.text = {
           value: (data.text && data.text.value) || '',
           x: data.x,

@@ -1,7 +1,7 @@
-export default function registerPush (lf, clickPlus, mouseDownPlus) {
+export default function registerPush(lf, clickPlus, mouseDownPlus) {
   lf.register('push', ({ PolygonNode, PolygonNodeModel, h }) => {
     class Node extends PolygonNode {
-      getIconShape () {
+      getIconShape() {
         const attributes = this.getAttributes()
         const {
           stroke
@@ -24,7 +24,7 @@ export default function registerPush (lf, clickPlus, mouseDownPlus) {
           )
         )
       }
-      getPulsShape () {
+      getPulsShape() {
         const attributes = this.getAttributes()
         // 判断当前节点是否子节点
         const graphData = lf.getGraphData()
@@ -75,7 +75,7 @@ export default function registerPush (lf, clickPlus, mouseDownPlus) {
           )
         )
       }
-      getShape () {
+      getShape() {
         const attributes = this.getAttributes()
         const {
           width,
@@ -115,7 +115,7 @@ export default function registerPush (lf, clickPlus, mouseDownPlus) {
       }
     }
     class Model extends PolygonNodeModel {
-      constructor (data, graphModel) {
+      constructor(data, graphModel) {
         data.text = {
           value: (data.text && data.text.value) || '',
           x: data.x,

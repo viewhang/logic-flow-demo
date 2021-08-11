@@ -11,7 +11,8 @@ import {
   Modal,
   Icon,
   Drawer,
-  message,
+  Switch,
+  message
 } from 'ant-design-vue'
 Vue.use(Input)
 Vue.use(Form)
@@ -19,10 +20,10 @@ Vue.use(Button)
 Vue.use(Modal)
 Vue.use(Icon)
 Vue.use(Drawer)
+Vue.use(Switch)
 Vue.use(message)
 Vue.prototype.$message = message
 
-
 new Vue({
-  render: h => h(App),
+  render: h => h(App)
 }).$mount('#app')

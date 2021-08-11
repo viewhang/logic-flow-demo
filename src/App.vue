@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <LF></LF>
+    <LF />
   </div>
 </template>
 
@@ -10,8 +10,8 @@ import { LF } from '@/components/Logicflow'
 export default {
   name: 'App',
   components: {
-    LF,
-  },
+    LF
+  }
 }
 </script>
 

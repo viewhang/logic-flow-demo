@@ -15,7 +15,7 @@ export default function registerEnd(lf) {
             x: x - 12,
             y: y + 4,
             width: 50,
-            height: 25,
+            height: 25
           },
           '结束'
         )
